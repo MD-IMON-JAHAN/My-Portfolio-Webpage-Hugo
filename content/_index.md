@@ -18,7 +18,7 @@ sections:
       button:
         text: Download CV
         # url: uploads/resume.pdf
-        url: /cvresume_imon.pdf
+        url: cvresume_imon.pdf
     design:
       css_class: dark
       background:
