@@ -21,7 +21,7 @@ image:
 
 ---
 
-### **Copyright & Disclaimer**
+<!-- ### **Copyright & Disclaimer**
 
 &copy; 2024 MD. IMON JAHAN. All rights reserved.
----
+--- -->
