@@ -6360,15 +6360,21 @@ div.chart {
 .katex-display {
   overflow: auto hidden;
 }
-.resume-biography .avatar {
-    width: 200px;
-    height: 200px;
-    max-width: 225px;
-    max-height: 225px;
-    margin-top: -100px;  /* Moves the image upward */
-    margin-bottom: 0px; /* Removes bottom margin */
-    -o-object-fit: cover;
-    object-fit: cover;
+.avatar-wrapper {
+    position: relative;
+    width: 150px; /* Keep width */
+    height: 150px; /* Keep height */
+    margin-left: auto;
+    margin-right: auto;
+    /* Remove or override any border-radius */
+  }
+  
+  .avatar-wrapper img {
+    width: 200%; /* Increase width to 120% */
+    height: 200%; /* Increase height to 120% */
+    object-fit: cover; /* Ensures the image fits within the dimensions */
+    border-radius: 0; /* This removes any circular effect */
+    margin-top: -10%; /* Optional: Adjust to compensate for the increase in size and keep it centered */
   }
   
 .resume-biography .network-icon {
@@ -6389,7 +6395,7 @@ div.chart {
   margin: 0;
 }
 .resume-biography #profile .network-icon {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 .resume-biography .network-icon li {
   margin-right: 10px;
@@ -6433,14 +6439,16 @@ div.chart {
   }
   
   .avatar-wrapper img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ensures the image fits within the dimensions */
-    border-radius: 0; /* This removes any circular effect */
+    width: 100%; /* Set to 100% to fill the container */
+    height: 100%; /* Set to 100% to fill the container */
+    object-fit: cover;
+    border-radius: 0;
     margin-bottom: -30px;
-    margin-left: -25px;
-    margin-top: 10px;
-  }
+    margin-left: -8px;
+    margin-top: -20px;
+    transform: scale(1.5); /* Scales the image to 200% */
+}
+
 .avatar-emoji {
   position: absolute;
   width: 40px;
